@@ -32,7 +32,7 @@
   <div class="layout">
     <Layout>
       <Header>
-        <Menu mode="horizontal" theme="dark" active-name="1" width="auto" @click.native="">
+        <Menu mode="horizontal" theme="dark" active-name="1" width="auto">
           <MenuItem name="1">
             <Icon type="ios-paper"/>
             主页
@@ -130,8 +130,14 @@ export default {
       page3: false
     }
   },created() {
-    function changePage() {
-
+    function changePage(i) {
+        switch(parseInt(i))
+        {
+          case 1:
+            {
+              
+            }
+        }
     }
   }
 }
