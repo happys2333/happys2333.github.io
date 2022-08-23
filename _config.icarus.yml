@@ -1,0 +1,180 @@
+version: 5.1.0
+variant: default
+logo:
+    text: coding with me
+head:
+    favicon: /asset/img/logo.png
+    manifest:
+        name: 开心的小窝 -- 一个程序猿的感想集中地
+        short_name: 开心的小窝
+        start_url: https://happys2333.github.io/
+        theme_color: 
+        background_color: 
+        display: standalone
+        icons:
+            -
+                src: ''
+                sizes: ''
+                type: 
+    open_graph:
+        title: 
+        type: blog
+        url: 
+        image: 
+        site_name: 
+        author: 开心
+        description: 一个虽然很菜但是仍然热爱编程的程序员
+        twitter_card: 
+        twitter_id: 
+        twitter_site: 
+        google_plus: 
+        fb_admins: 
+        fb_app_id: 
+    structured_data:
+        title: 
+        description: 
+        url: 
+        author: 
+        publisher: 
+        publisher_logo: 
+        image: 
+    meta:
+        - ''
+    rss: 
+navbar:
+    menu:
+        Home: /
+        Archives: /archives
+        Categories: /categories
+        Tags: /tags
+        About: /about
+    links:
+        GitHub:
+            icon: fab fa-github
+            url: https://github.com/happys2333
+footer:
+    links:
+        Download on GitHub:
+            icon: fab fa-github
+            url: https://github.com/happys2333/happys2333.github.io
+article:
+    highlight:
+        theme: atom-one-light
+        clipboard: true
+        fold: unfolded
+    readtime: true
+    update_time: true
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: https://creativecommons.org/licenses/by/4.0/
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: https://creativecommons.org/licenses/by-nc/4.0/
+search:
+    type: insight
+    index_pages: true
+donates:
+    -
+        type: alipay
+        qrcode: /asset/img/Alipay.JPG
+    -
+        type: wechat
+        qrcode: /asset/img/WeChat.JPG
+    -
+        type: buymeacoffee
+        url: https://www.buymeacoffee.com/happys233?new=1
+sidebar:
+    left:
+        sticky: false
+    right:
+        sticky: false
+widgets:
+    -
+        position: left
+        type: profile
+        author: 开心(Happys)
+        author_title: a software developer
+        location: China
+        avatar: https://avatars.githubusercontent.com/u/56923707?v=4
+        avatar_rounded: true
+        gravatar: 
+        follow_link: https://github.com/happys2333
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: https://github.com/happys2333
+            Twitter:
+                icon: fab fa-twitter
+                url: https://twitter.com/andy70173343
+            Telegram:
+                icon: fab fa-telegram
+                url: https://t.me/happys2333
+            QQ:
+                icon: fab fa-qq
+                url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1013214271
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: true
+        depth: 3
+    -
+        position: left
+        type: links
+        links:
+            Hexo: https://hexo.io
+            Bulma: https://bulma.io
+    -
+        position: left
+        type: categories
+    -
+        position: left
+        type: recent_posts
+    -
+        position: left
+        type: archives
+    -
+        position: left
+        type: tags
+        order_by: name
+        amount: 
+        show_count: true
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id: 
+    bing_webmaster:
+        tracking_id: 
+    busuanzi: false
+    cnzz:
+        id: 
+        web_id: 
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-left
+        policyLink: https://www.cookiesandyou.com/
+    gallery: true
+    google_analytics:
+        tracking_id: G-SX8BXG48XS
+    hotjar:
+        site_id: 
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    progressbar: true
+    statcounter:
+        project: 
+        security: 
+    twitter_conversion_tracking:
+        pixel_id: 
+providers:
+    cdn: jsdelivr
+    fontcdn: google
+    iconcdn: fontawesome
