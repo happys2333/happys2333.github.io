@@ -1,6 +1,6 @@
 ---
 title: welcome to my space
-date: 2022-08-23 17:20:56
+date: 2022-09-08
 tags: welcome
 language: en
 ---
@@ -10,9 +10,11 @@ language: en
 </div>
 </article>
 
+This is my blog. I think that I will write a lot of things in the future. It mainly about some my experience in computer learning. It may have many fields because I like share my experience in all fields.
 
+All in all, this blog's content will be various. But it mostly will be the experience for my in a period of time. Is there any about my life? Probably have. Most my blog will write both in English and Chinese. If I learn Japanese well in the future, maybe I will write in three different languages. Who knows.
 
-
+I will add tag in every post in order to help you look up conveniently.
 
 
 
