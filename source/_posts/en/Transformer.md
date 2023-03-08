@@ -1,7 +1,7 @@
 ---
 title: A short brief of Transformer
 date: 2022-09-09
-tags: deep learning
+tags: NLP
 language: en
 ---
 <article class="message message-immersive is-primary">

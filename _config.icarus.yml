@@ -5,7 +5,7 @@ logo:
 head:
     favicon: /asset/img/logo.png
     manifest:
-        name: 开心的小窝 -- 一个程序猿的感想集中地
+        name: 开心的小窝 -- 愿思想与知识与你可以碰撞
         short_name: 开心的小窝
         start_url: https://happys2333.github.io/
         theme_color: 
