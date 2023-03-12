@@ -3,9 +3,7 @@ subtitle: 程序猿的日常
 description: 开心的个人博客
 keywords: 开心 博客
 author: 开心
-language:
-  - zh-CN
-  - en
+language: zh-CN
 timezone: Asia/Shanghai
 url: https://happys2333.github.io/
 permalink: ':year/:month/:day/:title/'
