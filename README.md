@@ -7,12 +7,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+hexo server
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+hexo generate
 ```
 
 ### Lints and fixes files
