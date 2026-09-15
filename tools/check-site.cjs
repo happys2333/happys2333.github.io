@@ -15,7 +15,11 @@ function walk(dir) { return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e =
 const htmlFiles = walk(root).filter(f => f.endsWith('.html'));
 const failures = [];
 for (const file of htmlFiles) {
-  const html = fs.readFileSync(file,'utf8');
+  // Scripts contain JavaScript templates (e.g. href="${id}"), not document links.
+  const html = fs.readFileSync(file,'utf8')
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, '')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, '')
+    .replace(/<!--[\s\S]*?-->/g, '');
   const base = new URL(path.relative(root,file).split(path.sep).join('/'),'https://happys2333.github.io/');
   for (const match of html.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)) {
     const raw = match[1].replaceAll('&amp;','&');

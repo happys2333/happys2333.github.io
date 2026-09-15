@@ -8,7 +8,7 @@ language: en
 description: Attention, positional information, encoder structure, and a minimal PyTorch forecasting example with clear evaluation limits.
 ---
 
-[阅读中文版]({% post_path zh-CN/Transformer %})
+[阅读中文版](/2022/10/18/zh-CN/Transformer/)
 
 The original [Attention Is All You Need](https://arxiv.org/abs/1706.03762) introduced Transformer as an encoder–decoder architecture for machine translation. A useful starting question is: **how does each position retrieve the information it needs from other positions?**
 

@@ -8,7 +8,7 @@ language: zh-CN
 description: 从注意力公式、位置编码与编码器结构，到一个最小可运行的 PyTorch 时序预测模型。
 ---
 
-[Read in English]({% post_path en/Transformer %})
+[Read in English](/2022/09/09/en/Transformer/)
 
 Transformer 最早在 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) 中以机器翻译架构的形式提出。理解它的一个起点是：**每个位置怎样从其他位置取回当前需要的信息？**
 

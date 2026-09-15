@@ -8,7 +8,7 @@ language: en
 description: A practical introduction to NLP tasks, text representations, a working classification baseline, and evaluation.
 ---
 
-[阅读中文版]({% post_path zh-CN/NLP01 %})
+[阅读中文版](/2022/10/06/zh-CN/NLP01/)
 
 Natural language processing is about working with human language computationally. This introduction follows a practical path: define the task, prepare the data, represent the text, train a baseline, and evaluate it.
 
@@ -88,7 +88,7 @@ A sensible experiment starts with clear labels, a held-out evaluation set, and a
 
 NLP is not simply regression: classification predicts categories, regression predicts continuous values, and generation produces sequences. The fact that language has an order does not make every language task a regression problem.
 
-The next note, [Transformer]({% post_path en/Transformer %}), explains how attention connects positions and includes a small forecasting model with explicit tensor shapes.
+The next note, [Transformer](/2022/09/09/en/Transformer/), explains how attention connects positions and includes a small forecasting model with explicit tensor shapes.
 
 ## References
 
