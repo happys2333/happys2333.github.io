@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>happys · 开心的小窝 — 后端、AI 与开源</title>
+<meta name="description" content="happys 的个人主页与技术笔记。记录后端开发、AI 应用与开源实践，展示 AI Ladder、DataMiningFinal，以及 Deskflow、CC Switch 和 Gitea 的贡献。">
+<link rel="canonical" href="https://happys2333.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="happys · 把好奇心，写成可用的作品。">
+<meta property="og:description" content="后端开发、AI 应用与开源实践。作品、贡献，以及沿途的技术笔记。">
+<meta property="og:url" content="https://happys2333.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#f7f8fc">
+<link rel="icon" href="/asset/img/logo.png">
+<script>try{const t=localStorage.getItem('happys-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<script defer src="/assets/site.js"></script>
+</head>
+<body class="home">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<header class="site-header wrap">
+  <a class="wordmark" href="/" aria-label="happys 首页">happys<span>.</span></a>
+  <nav aria-label="主导航">
+    <a href="#work">作品</a><a href="#open-source">开源</a><a href="/blog/">笔记</a><a href="/about/">关于</a>
+  </nav>
+  <button class="theme-toggle" type="button" aria-label="切换深色主题" aria-pressed="false" hidden><span aria-hidden="true">◐</span><span class="theme-label">深色</span></button>
+</header>
+<main id="main" class="wrap">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> HELLO, I'M HAPPYS / 开心</p>
+      <h1 id="hero-title">把好奇心，<br>写成<span class="accent">可用的作品。</span></h1>
+      <p class="hero-description">关注后端系统、AI 应用与开源协作。<br>从一个具体问题出发，把想法实现，把细节做好，<br class="desktop-break">也把过程中的经验分享出来。</p>
+      <div class="hero-actions"><a class="button-primary" href="#work">看看我的作品 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/happys2333">GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="hero-note">BUILD WITH CURIOSITY. IMPROVE WITH CARE.</p>
+    </div>
+    <aside class="focus-card" aria-label="我的关注方向">
+      <div class="focus-top"><span class="eyebrow">THE THINGS I CARE ABOUT</span><span class="small-mark" aria-hidden="true">h.</span></div>
+      <div class="focus-row"><span class="focus-number">01</span><div><h2>可靠的系统</h2><p>Backend &amp; engineering</p><span>状态一致性 · 生命周期 · 回归测试</span></div></div>
+      <div class="focus-row"><span class="focus-number">02</span><div><h2>实用的 AI</h2><p>Models meet applications</p><span>数据整合 · 模型对比 · 时序预测</span></div></div>
+      <div class="focus-row"><span class="focus-number">03</span><div><h2>开放的协作</h2><p>Learn. Contribute. Share.</p><span>解决真实问题，也让改进可以复用</span></div></div>
+      <div class="focus-footer"><span>BACKEND / AI / OPEN SOURCE</span><span aria-hidden="true">↗</span></div>
+    </aside>
+  </section>
+  <section id="work" class="section" aria-labelledby="work-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">做过的，正在打磨的。</h2></div><p>两个项目，两种探索。</p></div>
+    <div class="project-grid">
+      <article class="project-card project-ai">
+        <div class="project-banner"><span class="project-index">01 / APPLICATION</span><span class="project-symbol" aria-hidden="true">AI<span>↗</span></span><p>COMPARE MODELS.<br>MAKE INFORMED CHOICES.</p></div>
+        <div class="project-body"><h3><a href="https://github.com/happys2333/AI-ladder">AI Ladder <span aria-hidden="true">↗</span></a></h3><p class="project-subtitle">让 AI 模型与编程套餐更容易比较。</p><p>把模型评测、价格与供应商信息整理到同一界面，支持检索、多维排序、最多三个模型并排对比，以及中英文浏览。</p><div class="project-detail"><strong>我关注的工程问题</strong><p>多源数据的采集与标准化，以及从数据到交互界面的一致表达。</p></div><ul class="chips" aria-label="AI Ladder 技术栈"><li>Vue 3</li><li>Vite</li><li>Python</li></ul><a class="text-link" href="https://github.com/happys2333/AI-ladder">查看项目与实现 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="project-card project-data">
+        <div class="project-banner"><span class="project-index">02 / EXPERIMENT</span><span class="project-symbol" aria-hidden="true">12<span>→ 1</span></span><p>FROM PAST OBSERVATIONS<br>TO THE NEXT STEP.</p></div>
+        <div class="project-body"><h3><a href="https://github.com/happys2333/DataMiningFinal">DataMiningFinal <span aria-hidden="true">↗</span></a></h3><p class="project-subtitle">从数据准备到模型对比的时序预测实验。</p><p>使用四座城市的病例时间序列，探索基于 ConvTrans 的 Transformer，并与 LSTM、回归基线对比，完成滑动窗口建模与结果可视化。</p><div class="project-detail"><strong>我关注的研究问题</strong><p>模型拟合与真实预测能力的区别，以及小样本条件下的评估边界。</p></div><ul class="chips" aria-label="DataMiningFinal 技术栈"><li>Python</li><li>PyTorch</li><li>pandas</li></ul><a class="text-link" href="https://github.com/happys2333/DataMiningFinal">查看实验与代码 <span aria-hidden="true">↗</span></a><p class="disclaimer">课程探索项目；数据有限，不作为经过验证的实际预测系统。</p></div>
+      </article>
+    </div>
+  </section>
+  <section id="open-source" class="section" aria-labelledby="oss-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / OPEN SOURCE</p><h2 id="oss-title">把使用中的问题，变成贡献。</h2></div><a class="text-link" href="https://github.com/pulls?q=is%3Apr+author%3Ahappys2333">我的 Pull Requests <span aria-hidden="true">↗</span></a></div>
+    <div class="contribution-list">
+      <article class="contribution"><div class="contribution-name"><span class="tiny-label">C++ / Qt</span><h3><a href="https://github.com/deskflow/deskflow">Deskflow</a></h3><span class="badge merged">已合并贡献</span></div><div class="contribution-content"><h4>客户端可靠性与事件生命周期</h4><p>在事件分发期间保持处理器有效，将断连清理推迟到回调结束；结合回归测试与 AddressSanitizer 验证生命周期问题。</p><a href="https://github.com/deskflow/deskflow/pull/9958">查看贡献 #9958 <span aria-hidden="true">↗</span></a></div></article>
+      <article class="contribution"><div class="contribution-name"><span class="tiny-label">Rust / Tauri</span><h3><a href="https://github.com/farion1231/cc-switch">CC Switch</a></h3><span class="badge submitted">已提交 PR</span></div><div class="contribution-content"><h4>服务商切换与配置一致性</h4><p>为已有会话的服务商切换实现状态协同与凭据隔离；另提交 OMO Slim 活跃预设导入修复，保留自定义配置字段。</p><a href="https://github.com/farion1231/cc-switch/pull/5815">服务商切换 #5815 ↗</a><span class="link-divider" aria-hidden="true"> / </span><a href="https://github.com/farion1231/cc-switch/pull/7228">预设导入 #7228 ↗</a></div></article>
+      <article class="contribution"><div class="contribution-name"><span class="tiny-label">Go / Git workflows</span><h3><a href="https://github.com/go-gitea/gitea">Gitea</a></h3><span class="badge merged">已合并贡献</span></div><div class="contribution-content"><h4>让界面操作与后端规则保持一致</h4><p>修正关闭 PR 后的分支删除入口：当同一分支仍被其他开放 PR 使用时隐藏删除按钮，避免提供后端无法完成的操作。</p><a href="https://github.com/go-gitea/gitea/pull/39193">查看贡献 #39193 <span aria-hidden="true">↗</span></a></div></article>
+    </div>
+    <p class="section-note">这里展示具体贡献，不代表项目维护者身份。PR 的最新状态以仓库记录为准。</p>
+  </section>
+  <section id="notes" class="section" aria-labelledby="notes-title">
+    <div class="section-heading"><div><p class="eyebrow">03 / FIELD NOTES</p><h2 id="notes-title">学过的，留下可复用的笔记。</h2></div><a class="text-link" href="/blog/">全部文章 <span aria-hidden="true">↗</span></a></div>
+    <div class="note-list">
+      <a class="note" href="/2022/09/08/zh-CN/python_setup/"><span class="tiny-label">ENGINEERING / PYTHON</span><div><h3>Python 安装与环境配置</h3><p>解释器、虚拟环境、依赖管理，以及常见报错排查。</p></div><span class="note-arrow" aria-hidden="true">↗</span></a>
+      <a class="note" href="/2022/10/06/zh-CN/NLP01/"><span class="tiny-label">MACHINE LEARNING / NLP</span><div><h3>自然语言处理：从文本到模型</h3><p>任务、文本表示与一个可以运行的分类基线。中英双语。</p></div><span class="note-arrow" aria-hidden="true">↗</span></a>
+      <a class="note" href="/2022/10/18/zh-CN/Transformer/"><span class="tiny-label">DEEP LEARNING / ATTENTION</span><div><h3>Transformer：结构、注意力与实践</h3><p>从 Q、K、V 到一个最小 PyTorch 预测模型。中英双语。</p></div><span class="note-arrow" aria-hidden="true">↗</span></a>
+    </div>
+    <p class="section-note">旧笔记持续修订，原始发表日期保留；本次正文补全于 2026 年 9 月。</p>
+  </section>
+  <section id="about" class="section about-section" aria-labelledby="about-title">
+    <div><p class="eyebrow">04 / A LITTLE ABOUT ME</p><h2 id="about-title">不只写代码，<br>也想弄懂为什么。</h2></div>
+    <div class="about-copy"><p>我是 happys，也可以叫我开心。正在香港理工大学学习元宇宙技术，关注后端工程、AI 应用，以及模型与真实场景之间的连接。</p><p>我习惯先复现问题，再阅读代码、缩小修改范围，最后用测试验证。比起罗列技术名词，我更愿意展示具体做过什么、怎样做，以及哪些地方还有边界。</p><div class="toolkit"><span class="tiny-label">WORKING WITH</span><p>Java / Go / C++ / Rust<br>Python / PyTorch / Vue / Git / Linux</p></div><a class="text-link" href="/about/">更多关于我 <span aria-hidden="true">↗</span></a></div>
+  </section>
+  <section class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">LET'S MAKE SOMETHING USEFUL</p><h2 id="contact-title">欢迎交流，也欢迎指出问题。</h2><p>项目问题请在对应仓库发起 Issue；技术交流可以通过 GitHub 或 Telegram 联系。</p></div><div class="contact-links"><a class="button-primary" href="https://github.com/happys2333">GitHub ↗</a><a class="text-link" href="https://t.me/happys2333">Telegram ↗</a></div></section>
+</main>
+<footer class="site-footer wrap"><a class="wordmark" href="/">happys<span>.</span></a><p>© <span data-year>2026</span> happys · 开心的小窝</p><div><a href="/archives/">归档</a><a href="/tags/">标签</a><a href="https://github.com/happys2333/happys2333.github.io">本站源码 ↗</a></div></footer>
+</body>
+</html>

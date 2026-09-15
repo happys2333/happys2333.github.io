@@ -1,30 +1,57 @@
-name: deploy my blog
+name: Build and deploy blog
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: blog-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
-      LSI: 'true'
       TZ: Asia/Shanghai
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 17
-      - name: Hexo env
-        run: npm install
-      - run: npx hexo algolia
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Generate site
+        run: npm run build
         env:
-          HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-      - run: NODE_ENV=production npx hexo g
-      - uses: peaceiris/actions-gh-pages@v3
+          NODE_ENV: production
+      - name: Check routes and local links
+        run: node tools/check-site.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-site
+          path: public/
+          include-hidden-files: true
+          retention-days: 7
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: generated-site
+          path: public/
+      - name: Publish to existing gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./public
-          force_orphan: true
